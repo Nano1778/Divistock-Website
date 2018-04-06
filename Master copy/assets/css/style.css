@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+html, body {
+    /*Reset default browser styling*/
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #A9A9A9;
+}
+ 
+/*Navigation*/
+.wrapper {
+    padding: 0 5%;
+}
+nav {
+    background-color: black;
+    height: 56px;
+}
+nav ul li {
+    display: inline-block;
+    padding: 17.5px 10px; 
+    font-size: 14px;
+}
+nav ul #logo {
+    background-image: url('../images/Nav-Logo.png');
+    width: 50px;
+    height: 56px;
+    padding:0;
+}
+nav ul li a {
+    color: #a9a9a9;
+}
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/*Landing*/
+.intro {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right top, #444444, #5a5a5a, #717171, #888988, #a1a1a1);
+    display: table;
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-height: none;
+}
+.content {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    font-family: "Roboto" , sans-serif;
+    margin-bottom: 10%;
+}
+.content p {
+    color: #E0E0E0;
+    font-size: 100%;
+    font-weight: 100;
+    padding: 5%;
+}
+.content .landing-btn {
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 100%;
+    font-weight: 500;
+    margin: 5% 5% 0% 5%;
+    padding: 2% 5%;
+    border: 3px solid #B70F39;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+}
+.content a {
+    text-decoration: none;
+    height: auto;
+    width: auto;
+}
+
+.content a{
+    color:#BB143E;
+    /* First we need to help some browsers along for this to work.
+       Just because a vendor prefix is there, doesn't mean it will
+       work in a browser made by that vendor either, it's just for
+       future-proofing purposes I guess. */
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+
+.content a:hover {
+    background-color: #BB143E; /*Changes background color when hovered*/
+    font-weight: 600;/*Changes text color when hovered*/
+
+
+
+}
+#landing-image {
+    background: url('../images/Logo.png') no-repeat 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#time-remain{
+    font-size: 100%;
+}
+
+#text-animation{
+
+    height: 70px;
+
+}
+
+
+/*How it works*/
+
+
+
+#about{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.how-intro{
+    padding-bottom: 10%;
+}
+.how-it-works p {
+    margin-top: 20px;
+
+}
+.text-primary{
+    animation: colorchange1 50s;
+    -webkit-animation: colorchange1 50s
+}
+.icons span{
+    text-align: center;
+    display: block;
+    color: white;
+    margin: 0 auto;
+}
+@keyframes colorchange1
+{
+    0%   {color: lightsteelblue;}
+
+}
+
+/*Investment Page*/
+.container {
+    max-width: none;
+}
+/*Information*/
+#info {
+    padding: 10% 5%;
+    text-align: center;
+    background-color: #011627;
+    height: 100vh;
+    color: white;
+}
+/*Payment*/
+#payment {
+    padding: 10% 5%;
+    text-align: center;
+    background-color: #fff;
+}
+#payment h4 {
+    border-bottom: 2px solid #a9a9a9;
+}
+.payment-option {
+    display: inline-grid;
+    padding: 0;
+    border: 2px solid #a9a9a9;
+    margin: 10px auto;
+}
+/*.payment-option:hover {
+    color:  #ff9900;
+    background-color: #009ffd;
+}*/
+#eth-logo {
+    background: url('../images/Eth-logo.png') no-repeat 50% 50%;
+}
+#fiat-logo {
+    padding: 50px 0;
+}
+#eth-logo, #fiat-logo {
+    height: 150px;
+    background-size: contain;
+}
+#invest-continue {
+    width: 40%;
+    color: white;
+    background-color: darkblue;
+}
+/*Footer*/
+footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000;
+}
+footer p {
+    display: inline-block;
+    color: #a9a9a9;
+    margin: 0;
+    padding: 3%;
+}
+
+@media screen and (min-width: 505px) {
+    #landing-image {
+        height: 150px;
+    }
+}
+@media screen and (min-width: 800px){
+    #landing-image {
+        height: 300px;
+    }
+    #info {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #landing-image {
+        width: 50%;
+    }
+    .content p {
+        font-size: 28px;
+    }
+}

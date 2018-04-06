@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 1500px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Navigation*/
+header {
+    position: absolute;
+}
+.nav-home {
+    background-color: transparent;
+    text-align: center;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+.nav-home .container {
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 0;
+}
+.overlay li {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', cursive;
+}
+.overlay a {
+    color:white;
+    font-size: 100%;
+    text-decoration: none;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #009FFD;
+    text-decoration: none;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    font-size: 400%;
+}
+#myNav {
+    display: inline-block;
+    width: 100%;
+    height: 0%;
+}
+#myNav .overlay-content li .active {
+    color: #C30D3D;
+}
+#mnav {
+     width: 100%;
+     transition: .3s;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     padding-left: 3%;
+}
+#mnav.shrink {
+     padding-top: 1%;
+     padding-bottom: 1%;
+     background: black;
+}
+
+/*General CSS*/
+.heading-break {
+  width: 100px;
+  height: 10px;
+  background-color: #C30D3D;
+  margin: 0 auto;
+}
+.section-info {
+  text-align: center;
+  padding: 80px 30px 30px 30px;
+  margin: 0 auto;
+}
+/*landing*/
+#landing {
+  width: 100%;
+  height: auto;
+  background-color: #484755;
+  color: white;
+}
+#landing p {
+    color: #a9a9a9;
+}
+#landing .landing-btn {
+  color: white;
+  font-weight: 100;
+  background-color: #C30D3D;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+#landing  ul {
+  margin: 50px 0 0 0;
+  color: #a9a9a9;
+  padding: 0;
+}
+#landing .landing-social li{
+  margin: 5px;
+  font-size: 24px;
+  display: inline;
+}
+#landing-review {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.review-scores {
+  margin: 40px 0 0 0;
+}
+
+/*About*/
+#about {
+  height: auto;
+  background-color: #76748b;
+  color: white;
+}
+#about #about-info h3 {
+  color: #F5F5F5;
+}
+#about .section-info p {
+  color: #DCDCDC;
+}
+#about ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+#about .circle-process {
+  display: table;
+  border: 3px solid white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+#about .circle-process p {
+  color: #DCDCDC;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*Features*/
+#features {
+  height: auto;
+  background-color: #76748b;
+  color: white;
+}
+#features .section-info p {
+  color: #DCDCDC;
+}
+#features .feature-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  background: linear-gradient(to right top, #00c4b3, #00d2a1, #3add83, #71e659, #a8eb12);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+/*Token Sale*/
+#token-sale {
+  height: auto;
+  background-color: #76748b;
+  color: white;
+}
+#token-sale .section-info p {
+  color: #DCDCDC;
+}
+#token-info {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#token-sale ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+#token-general {
+
+
+}
+.general-info {
+  padding: 5px;
+  margin: 10px auto;
+}
+.token-in {
+  display: inline-block;
+}
+.token-list {
+  margin-bottom:0;
+}
+#token-counter {
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(to right top, #00c4b3, #00d2a1, #3add83, #71e659, #a8eb12);
+
+}
+.token-time {
+  margin-bottom: 30px;
+}
+#token-counter a {
+  color: white;
+  padding: 15px 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right top, #051937, #003251, #004c69, #00687b, #188489);
+  text-decoration: none;
+}
+#road-contact {
+  background: #484755;
+}
+form textarea {
+  resize: none;
+}
+#roadmap {
+  padding-top: 100px;
+  height: 350px;
+  text-align: center;
+}
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+}
+@media screen and (min-width:505px){
+  .review-scores {
+    list-style-type: none;
+    margin: 40px 5px 0 5px;
+    display: inline-block;
+  }
+}
+@media screen and (min-width:800px){
+  /* Navigation */
+  #mnav {
+    padding-left: 50px;
+  }
+  .overlay .closebtn {
+    padding-left: 30px;
+  }
+  /* Landing */
+  #landing .section-info {
+    text-align: left;
+    padding-top: 15%;
+    padding-right: 60%;
+    padding-left: 50px;
+  }
+  /* Remove #landing afterwards */
+  .heading-break {
+    margin: 0;
+  }
+  #landing-review {
+    padding-left: 50px;
+    text-align: left;
+  }
+  #landing-review ul {
+    list-style-type: none;
+  }
+  #landing-review li {
+    display: inline-block;
+  }
+  #scores div {
+    margin: 20px;
+    display: inline-block;
+  }
+  #about .section-info{
+    padding-right: 50%;
+    padding-left: 50px;
+    text-align: left;
+  }
+  #about ul {
+    display: inline-flex;
+  }
+  #about ul li {
+    margin: 10px;
+  }
+}
+@media screen and (min-width:1024px){
+  #token-info {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width:1500px){}

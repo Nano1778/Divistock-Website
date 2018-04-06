@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116161364-1"></script>
+        <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-116161364-1');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="">
+        <!-- Icon displayed beside Title -->
+        <link rel="icon" type="image/png" href="assets/images/Icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Divistock Blockchain</title>
+		
+        <!-- Links and external resources -->
+        <!-- BootStrap for responsive design -->
+        <link type='text/css' rel='stylesheet' href='assets/css/bootstrap.min.css'>
+        <!-- Animation on scroll -->
+        <link type='text/css' rel='stylesheet' href='assets/css/aos.css'>
+        <link type='text/css' rel='stylesheet' href='assets/css/style.css'>
+        <link type='text/css' rel='stylesheet' href='assets/css/flaticon.css'>
+    </head>
+	
+    <body>
+        <!-- Navigation -->
+        <section class="navigation">
+            <nav>
+                <div class="wrapper">
+                    <ul class="nav">
+                        <li id="logo"></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+				<!-- Wrapper End -->
+            </nav>
+        </section>
+		
+        <!-- Investment -->
+        <section id="invest">
+			<div class="container">
+				<div class="row">
+                    <div id="info" class="col-12 col-lg-6">
+                        <div class="invest-logo"></div>
+                        <h1>Invest</h1>
+                        <p>Nunc quis magna justo. Donec ac felis at erat convallis blandit. Donec interdum, lorem ut pellentesque dictum, arcu dolor porta lorem, eget lacinia sapien eros non ipsum. Phasellus pharetra nec enim vitae ornare. Maecenas a diam sit amet dolor maximus maximus volutpat quis magna. Nullam tempus nunc sed volutpat efficitur. Quisque vitae nibh nec odio dictum vehicula eget vel eros.</p>
+                        <p>Time remaining : <span id="time-remain"></span></p>
+                        <p>Step 1 out of 6</p>
+                    </div>
+                    <div id="payment" class="col-lg-6">
+                        <h3>Select your payment</h3>
+                        <p>Please select the currency in which you would like to contribute to Divistock</p>
+                        <div>
+                            <div id="eth" class="payment-option col-xs-12 col-md-3">
+                                <h4>Ethereum</h4>
+                                <div id="eth-logo" class="payment-logo"></div>
+                            </div>
+                            <div id="fiat" class="payment-option col-xs-12 col-md-3">
+                                <h4>FIAT</h4>
+                                <div id="fiat-logo" class="payment-logo"><h1>FIAT</h1></div>
+                            </div>
+                        </div>
+                        <a id="invest-continue" href="#" class="btn">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+        <!--Footer-->
+        <footer>
+            <p>Divistock &copy; All Rights Reserved</p>
+        </footer>
+		
+        <!-- Scripts -->
+        <!-- Animation CDN -->
+		<script src='assets/js/aos.js'></script>
+        <!-- Animation Initialization -->
+		<script>
+            AOS.init({
+                disable: function () {
+                    var maxWidth = 1024;
+					return window.innerWidth < maxWidth;
+                }
+            });
+        </script>
+        <!-- JQuery CDN -->
+		<script src='assets/js/jquery-3.2.1.slim.min.js'></script>
+        <!-- Bootstrap.js CDN -->
+		<script src='assets/js/bootstrap.min.js'></script>
+        <!-- Popper CDN -->
+		<script src='assets/js/popper.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js'></script>
+        <!-- Personal JS File -->
+		<script src='assets/js/main.js'></script>
+    </body>
+</html>
