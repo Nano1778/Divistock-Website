@@ -6,11 +6,8 @@ const ethAddress = document.querySelector('.ethAddress');
 // Event listeners
 document.addEventListener('DOMContentLoaded', hideCards);
 
-
-document.getElementById('invest-option-btn').addEventListener('click', stepTwo);
 document.getElementById('invest-option-btn2').addEventListener('click', stepTwo);
-
-
+document.getElementById('invest-option-btn').addEventListener('click', stepTwo);
 
 // Hide cards
 function hideCards () {
@@ -19,18 +16,18 @@ function hideCards () {
 }
 
 function stepTwo() {
-    chooseCrypto.style.display = 'none';
-    writeContact.style.display = 'block';
-    ethAddress.style.display = 'none';
+
+    $('.chooseCrypto').fadeOut();
+    $(".writeContact").delay(700).fadeIn();
 
     document.getElementById('submitBtn').addEventListener('click', stepThree);
 
 }
 
 function stepThree() {
-    chooseCrypto.style.display = 'none';
-    writeContact.style.display = 'none';
-    ethAddress.style.display = 'block';
+
+    $('.writeContact').fadeOut();
+    $(".ethAddress").delay(700).fadeIn();
+   chooseCrypto.style.display = 'none';
+
 }
-
-
