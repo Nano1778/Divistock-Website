@@ -3183,7 +3183,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .tokens-area .tokens .token-body {
   background: #1a1c35;
-  height: 464px;
+  height: auto;
   padding: 50px 55px;
   display: inline-block;
   border-radius: 22px;
@@ -3197,7 +3197,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .tokens-area .tokens .token-body .left-btn {
   display: inline-block;
-  height: 60px;
+  height: auto;
   line-height: 54px;
   padding: 0 45px;
   border-radius: 50px;
@@ -3209,7 +3209,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .tokens-area .tokens .token-body .right-btn{
   display: inline-block;
-  height: 60px;
+  height: auto;
   line-height: 54px;
   padding: 0 45px;
   border-radius: 50px;
