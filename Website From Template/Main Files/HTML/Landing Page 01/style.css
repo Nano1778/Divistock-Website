@@ -3187,7 +3187,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
 }
 .tokens-area .tokens .token-body {
   background: #1a1c35;
-  height: 500px;
+  height: auto;
   padding: 50px 55px;
   display: inline-block;
   border-radius: 22px;
