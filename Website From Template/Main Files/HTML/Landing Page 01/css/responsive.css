@@ -40,7 +40,9 @@
 	header .mobilemenu .mean-container .mean-nav{margin-top: 38px;}
 	.video-des .deslidt ul li .serials:before,.video-des .deslidt ul li .serials span.cre:before,.video-des .deslidt ul li .serials span.cre:after{display: none;}
 }
-
+@media only screen and (max-width: 765px){
+    .tokens-area .tokens .token-body{height: auto;}
+}
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
 	.my-video-dimensions{width: 400px;height: 207px;}
