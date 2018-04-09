@@ -7,7 +7,7 @@ const ethAddress = document.querySelector('.ethAddress');
 document.addEventListener('DOMContentLoaded', hideCards);
 
 
-document.getElementById('invest-option-btn').addEventListener('click', stepTwo);
+
 document.getElementById('invest-option-btn2').addEventListener('click', stepTwo);
 
 
@@ -19,19 +19,21 @@ function hideCards () {
 }
 
 function stepTwo() {
-    chooseCrypto.style.display = 'none';
-    writeContact.style.display = 'block';
-    ethAddress.style.display = 'none';
+
+    $('.chooseCrypto').fadeOut()
+    $(".writeContact").fadeIn()
 
     document.getElementById('submitBtn').addEventListener('click', stepThree);
 
 }
 
 function stepThree() {
-    console.log('dafuq');
-    chooseCrypto.style.display = 'none';
-    writeContact.style.display = 'none';
-    ethAddress.style.display = 'block';
+    
+    $('.writeContact').fadeOut()
+    $(".ethAddress").fadeIn()
+//    chooseCrypto.style.display = 'none';
+//    writeContact.style.display = 'none';
+//    ethAddress.style.display = 'block';
 }
 
 
