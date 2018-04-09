@@ -818,7 +818,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right chooseCrypto">
                            <div class="tokens mr-r50">
                               <div class="token-name">Options</div>
                               <div class="token-body">
@@ -853,8 +853,40 @@
                                        </tbody>
                                     </table>
 -->
-                                     <p id="invest-option-btn" class="left-btn">FIAT</p>
-                                     <p id="invest-option2-btn" class="left-btn">Ethereum</p>
+                                    <button id="invest-option-btn" class="left-btn">FIAT</button>
+                                     <!--<p id="invest-optionn-btn" class="left-btn">FIAT</p>-->
+                                     <button id="invest-option2-btn" class="left-btn">Ethereum</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right writeContact">
+                           <div class="tokens mr-r50">
+                              <div class="token-name">CONTACT</div>
+                              <div class="token-body">
+                                 <p>Please enter your information</p>
+                                 <div>
+                                    <div class="card card-body card-form">
+                                       <div class="form-group">
+                                          <input type="text" id="name" class="form-control" placeholder="Name">
+                                       </div>
+                                       <div class="form-group">
+                                          <input type="text" id="email" class="form-control mt-5" placeholder="E-mail">
+                                       </div>
+                                       <button id="submitBtn" class="btn btn-primary btn-block">Submit</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right ethAddress">
+                           <div class="tokens mr-r50">
+                              <div class="token-name">Contribution</div>
+                              <div class="token-body">
+                                 <p>Contribute to this address</p>
+                                 <div class="prices">
+                                    <p id="invest-address" class="right-btn">23fq41ERWf128djf</p>
+
                                  </div>
                               </div>
                            </div>
@@ -1458,5 +1490,7 @@
       <script src="js/Youtube.min.js"></script>
       <!-- main js -->
       <script src="js/main.js"></script>
+         <script src="js/mainApp.js"></script>
+      </div>
    </body>
 </html>

@@ -45,6 +45,12 @@ body {
 .navLogo{
   margin-left : 30px;
 }
+#invest-option-btn{
+  margin-bottom: 10px;
+  width: 180px;
+}
+
+
 
 a {
   transition: all 0.5s;
