@@ -42,6 +42,10 @@ body {
 /* ....................................
 1.1 Reset CSS
 .......................................*/
+.navLogo{
+  margin-left : 30px;
+}
+
 a {
   transition: all 0.5s;
   text-decoration: none;
