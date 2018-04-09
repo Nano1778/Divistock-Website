@@ -3219,7 +3219,7 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   background: transparent;
 }
 .tokens-area .tokens .token-body .right-btn{
-  display: inline-block;
+  display: block;
   height: auto;
   line-height: 54px;
   padding: 0 45px;
