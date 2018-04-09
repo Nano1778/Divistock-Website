@@ -28,7 +28,6 @@ function stepTwo() {
 }
 
 function stepThree() {
-    console.log('dafuq');
     chooseCrypto.style.display = 'none';
     writeContact.style.display = 'none';
     ethAddress.style.display = 'block';
