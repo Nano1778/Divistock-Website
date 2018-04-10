@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import BookList from '../containers/book-list';
+import NavBar from './nav_bar';
+import About from './about';
+
 
 export default class App extends Component {
   render() {
     return (
         <div>
-          <BookList/>
+            <NavBar/>
+            <About/>
         </div>
     );
   }
