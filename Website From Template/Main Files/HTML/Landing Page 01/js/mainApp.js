@@ -7,7 +7,6 @@ const ethAddress = document.querySelector('.ethAddress');
 document.addEventListener('DOMContentLoaded', hideCards);
 
 document.getElementById('invest-option-btn2').addEventListener('click', stepTwo);
-document.getElementById('invest-option-btn').addEventListener('click', stepTwo);
 
 // Hide cards
 function hideCards () {
