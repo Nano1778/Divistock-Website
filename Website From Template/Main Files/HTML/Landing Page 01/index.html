@@ -588,18 +588,30 @@
                               <div class="token-body">
                                  <p>Please enter your information</p>
                                  <div>
-                                    <div class="card card-body card-form">
+                                    <form class="card card-body card-form" name="submit-to-google-sheet">
                                        <div class="form-group">
-                                          <input type="text" id="name" class="form-control" placeholder="Name">
+                                          <input name="name" type="text" placeholder="Name" class="form-control" id="nameInput" required>
                                        </div>
                                        <div class="form-group">
-                                          <input type="text" id="email" class="form-control mt-5" placeholder="E-mail">
+                                          <input name="email" type="email" placeholder="Email" class="form-control" id="emailInput" required>
                                        </div>
-									    <div class="form-group">
-                                          <input type="text" id="address" class="form-control mt-5" placeholder="Ether Address">
+                                       <div class="form-group">
+                                          <input name="address" type="text" placeholder="Ethr Address" class="form-control" id="addressInput" required>
                                        </div>
-                                       <button id="submitBtn" class="btn btn-primary btn-block">Submit</button>
-                                    </div>
+                                       <button id="submitBtn"class="btn btn-primary btn-block" type="submit">Send</button>
+                                    </form>
+                                    <!--<form class="card card-body card-form" onsubmit="return false" name="submit-to-google-sheet">-->
+
+                                          <!--<input type="text" id="name" class="form-control" placeholder="Name" required>-->
+
+
+                                          <!--<input type="email" id="email" class="form-control mt-5" placeholder="E-mail" required>-->
+
+
+                                          <!--<input type="text" id="address" class="form-control mt-5" placeholder="Ether Address" required>-->
+
+                                       <!--<button id="submitBtn" class="btn btn-primary btn-block" type="submit">Submit</button>-->
+                                    <!--</form>-->
                                  </div>
                               </div>
                            </div>
@@ -681,6 +693,20 @@
             </div>
          </footer>
       </div>
+         <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+         <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+         <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+         <!--<script>-->
+             <!--const scriptURL = 'https://script.google.com/macros/s/AKfycbyhykyqmiKuBjqNuTFpqlPtUEMKOnDLOFOgj6a3BOrcJXCYO1hG/exec';-->
+             <!--const form = document.forms['submit-to-google-sheet'];-->
+
+             <!--form.addEventListener('submit', e => {-->
+                 <!--e.preventDefault();-->
+                 <!--fetch(scriptURL, { method: 'POST', body: new FormData(form)})-->
+                     <!--.then(response => console.log('Success!', response))-->
+                     <!--.catch(error => console.error('Error!', error.message));-->
+             <!--})-->
+         <!--</script>-->
       <!--Footer area end here-->
       <!-- all js here -->
       <!-- jquery latest version -->
