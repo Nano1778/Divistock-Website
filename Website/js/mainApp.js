@@ -17,8 +17,9 @@ const addressInput = document.getElementById('nameInput').value;
 form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message));
+//        .then(response => console.log('Success!', response))
+//        .catch(error => console.error('Error!', error.message));
+     document.getElementById('submitBtn').addEventListener('click', stepThree);
 
 });
 
@@ -34,7 +35,7 @@ function stepTwo() {
     // if(nameInput === ''){
     //     console.log('fuck');
     // }else if(nameInput !== '') {
-        document.getElementById('submitBtn').addEventListener('click', stepThree);
+//        document.getElementById('submitBtn').addEventListener('click', stepThree);
     // }
 
 }
