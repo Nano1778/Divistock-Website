@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', hideCards);
 
 document.getElementById('invest-option-btn2').addEventListener('click', stepTwo);
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyhykyqmiKuBjqNuTFpqlPtUEMKOnDLOFOgj6a3BOrcJXCYO1hG/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwvInEibscvS2ktocEb9mJ6t5aNPiTgMRUdORtFxA/exec';
 const form = document.forms['submit-to-google-sheet'];
 const nameInput = document.getElementById('nameInput').value;
 const emailInput = document.getElementById('nameInput').value;
