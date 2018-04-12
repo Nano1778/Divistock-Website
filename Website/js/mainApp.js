@@ -10,16 +10,25 @@ document.getElementById('invest-option-btn2').addEventListener('click', stepTwo)
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwvInEibscvS2ktocEb9mJ6t5aNPiTgMRUdORtFxA/exec';
 const form = document.forms['submit-to-google-sheet'];
-const nameInput = document.getElementById('nameInput').value;
-const emailInput = document.getElementById('nameInput').value;
-const addressInput = document.getElementById('nameInput').value;
+
+
+
+document.getElementById('submitBtn').addEventListener('click',submitting);
+
+function submitting(){
+    document.getElementById('please').innerText = 'Submitting please wait ... ';
+
+}
 
 form.addEventListener('submit', e => {
+
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => response)
+        .then(() => {
+        stepThree();
+        })
         .catch(error => error);
-     document.getElementById('submitBtn').addEventListener('click', stepThree);
+
 
 });
 
@@ -32,12 +41,7 @@ function hideCards () {
 function stepTwo() {
     $('.chooseCrypto').fadeOut();
     $(".writeContact").delay(700).fadeIn();
-    // if(nameInput === ''){
-    //     console.log('fuck');
-    // }else if(nameInput !== '') {
-//        document.getElementById('submitBtn').addEventListener('click', stepThree);
-    // }
-
+    
 }
 
 function stepThree() {
