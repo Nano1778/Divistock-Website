@@ -4186,15 +4186,7 @@ body.date-20180212.exp-invert-logo {
   border-radius: 30px;
 }
 .video-area .videos-heding .videos-box .video-js .vjs-big-play-button {
-  width: 125px;
-  height: 125px;
-  border-radius: 100%;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  left: 0;
-  right: 0;
-  top: 32%;
-  margin: 0 auto;
+  display: none;
 }
 .video-area .videos-heding .videos-box .video-js .vjs-big-play-button:before {
   content: '';

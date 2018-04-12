@@ -11843,25 +11843,25 @@ var PosterImage = function (_ClickableComponent) {
    */
 
 
-  PosterImage.prototype.createEl = function createEl$$1() {
-    var el = createEl('div', {
-      className: 'vjs-poster',
-
-      // Don't want poster to be tabbable.
-      tabIndex: -1
-    });
-
-    // To ensure the poster image resizes while maintaining its original aspect
-    // ratio, use a div with `background-size` when available. For browsers that
-    // do not support `background-size` (e.g. IE8), fall back on using a regular
-    // img element.
-    if (!BACKGROUND_SIZE_SUPPORTED) {
-      this.fallbackImg_ = createEl('img');
-      el.appendChild(this.fallbackImg_);
-    }
-
-    return el;
-  };
+//  PosterImage.prototype.createEl = function createEl$$1() {
+//    var el = createEl('div', {
+//      className: 'vjs-poster',
+//
+//      // Don't want poster to be tabbable.
+//      tabIndex: -1
+//    });
+//
+//    // To ensure the poster image resizes while maintaining its original aspect
+//    // ratio, use a div with `background-size` when available. For browsers that
+//    // do not support `background-size` (e.g. IE8), fall back on using a regular
+//    // img element.
+//    if (!BACKGROUND_SIZE_SUPPORTED) {
+//      this.fallbackImg_ = createEl('img');
+//      el.appendChild(this.fallbackImg_);
+//    }
+//
+//    return el;
+//  };
 
   /**
    * An {@link EventTarget~EventListener} for {@link Player#posterchange} events.
