@@ -41,7 +41,6 @@ function hideCards () {
 function stepTwo() {
     $('.chooseCrypto').fadeOut();
     $(".writeContact").delay(700).fadeIn();
-    
 }
 
 function stepThree() {
