@@ -4151,7 +4151,7 @@ body.date-20180212.exp-invert-logo {
 }
 .video-area .videos-heding .videos-box {
   display: inline-block;
-  margin: 0 0 -175px;
+  margin: 0 -100px -175px;
   position: relative;
   z-index: 999;
   border-radius: 25px;
