@@ -25,6 +25,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .video-area .videos-heding .videos-box {
+        margin: 0 -100px -175px;
+
+    }
 	.mobile-menu-area{display: block !important;}
 	.my-video-dimensions{width: 480px;height: 249px;}
 	.video-area .videos-heding .videos-box .video-js .vjs-big-play-button{top: 24%;}
@@ -84,7 +88,7 @@
 		padding: 0 25px;
 	}
 	header .menu-area{
-		padding-top:5px;
+		padding-top:10px;
 	}
 	header .menu-area nav ul li{
 		    padding: 0 9px;
@@ -116,3 +120,14 @@
 		margin-left:15px !important;
 	}
 }
+
+@media screen and (min-width: 1200px){
+    header .menu-area {
+        padding-top: 10.5px;
+    }
+}
+@media only screen and (max-width : 1000px) {
+    .video-area .videos-heding .videos-box {
+        margin: 0 -100px -175px;
+
+    }
