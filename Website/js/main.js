@@ -216,7 +216,7 @@ owl active
 
 
 // CountDown Js
-	var deadline = 'june 16 2018 11:59:00 EST-0000';
+	var deadline = 'june 21 2018 11:59:00 EST-0000';
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );
