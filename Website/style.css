@@ -1550,8 +1550,14 @@ header {
   right: 0;
   z-index: 9999;
   background:#8e1a1a;
-      padding-top: 30px;
+      padding-top: 10px;
     padding-bottom: 14px;
+}
+header .logo-area a{
+    color: black;
+}
+header .logo-area a:hover{
+    color: white;
 }
 header .menu-area {
   text-align: right;
@@ -4151,7 +4157,7 @@ body.date-20180212.exp-invert-logo {
 }
 .video-area .videos-heding .videos-box {
   display: inline-block;
-  margin: 0 -100px -175px;
+  margin: 0 0 -175px;
   position: relative;
   z-index: 999;
   border-radius: 25px;
