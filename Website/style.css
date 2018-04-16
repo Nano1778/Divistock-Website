@@ -1708,6 +1708,7 @@ header .mobilemenu .mean-container a.meanmenu-reveal {
 	width:100%;
 }
 #sidebar {
+    width: 100%;
   position: fixed;
   display: block;
   height: 100%;
