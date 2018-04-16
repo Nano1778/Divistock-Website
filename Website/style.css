@@ -2285,6 +2285,9 @@ footer .footer-bottom {
   line-height: 100px;
   position: relative;
 }
+footer p {
+    margin-bottom: 0;
+}
 footer .footer-bottom .copyright p {
   font-size: 12px;
   margin: 0;
@@ -2951,6 +2954,7 @@ background: linear-gradient(to right, rgb(232, 24, 24) 0%, rgb(232, 24, 24) 100%
   padding-top: 15px;
   z-index: 999;
 }
+
 @media only screen and (max-width: 1600px) {
   .currency-area .rete-list {
     padding-left: 8px;
